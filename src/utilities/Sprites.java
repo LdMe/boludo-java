@@ -39,9 +39,8 @@ public class Sprites  implements Cloneable{
 		
 		//InputStream is = getClass().getClassLoader().getResourceAsStream(imagepath);
 			URL url = ClassLoader.getSystemResource(imagepath);
-			File f= new File(imagepath);
-			System.out.println(imagepath);
-			image=ImageIO.read(f);
+			
+			image=ImageIO.read(url);
 		xpos=x;
 		ypos=y;
 		path=imagepath;
